@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Shop</title>
+    </head>
+    <body>
+        <h1>The simplest hotel</h1>
+        <button style="margin: 10px;" onclick = "showAdd()">Add</button>
+        <button style="margin: 10px;" onclick = "showQuit()">Quit</button>
+
+        <div id="add">
+            <label>Your id</label>
+            <input type="text" id="idClient"><br>
+            <label>Name</label>
+            <input type="text" id="name"><br>
+            <label>Surname</label>
+            <input type="text" id="surname"><br>
+            <label>Phone</label>
+            <input type="text" id="phone"><br>
+            <label>Id of the room to book</label>
+            <input type="text" id="idRoom"><br>
+            <input type="submit" value="Submit" onclick="clientInfo()">
+        </div>
+        <div id="quit">
+            <label>Id of the room to delete the rent of</label>
+            <input type="text" id="idQuit"><br>
+            <input type="submit" value="Submit" onclick="quit()">
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>
